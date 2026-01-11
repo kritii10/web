@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form- EcoSummit</title>
+        <style>
+            h1{
+                text-align: center;
+                background-color: #f1c40f;
+                width: 500px;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+            table{
+                width: 800px;
+                height: 700px;
+                margin: auto;
+                background: bisque;
+            }
+            th,td{
+                padding: 10px, 10px;
+            }
+            th{
+                text-align: right;
+                color: #2C3E50;
+            }
+            label{
+                font-family: Verdana, sans-serif;
+                font-size: 1.25em;
+            }
+            input[type=submit],input[type=reset]{
+                border: ridge 3px #2C3E50;
+                padding: 5px;
+                width: 100px;
+                margin: 50px 60px;
+            }
+            td{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Registration Form-  
+            <span style="color:#4BBB3B;" >Eco</span>
+            <span style="color:#5D8AAB;" >Summit</span>
+        </h1>
+        <table>
+        <form method="get" action="">
+            <tr>
+                <th><label for="pname">Name of participant:</label></th>
+                <td><input type="text" name="pname" id="pname"></td>
+            </tr>
+            <tr>
+                <th><label for="email">Email:</label></th>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <th><label for="Mnum">Mobile Number:</label></th>
+                <td><input type="tel" name="Mnum" id="Mnum"></td>
+            </tr>
+            <tr>
+                <th><label for="password">Passcode:</label></th>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <th><label for="city">City:</label></th>
+                <td><select name="city" id="city">
+                    <option>Select an option</option>
+                    <option value="=Blr" selected>Bangalore</option> 
+                    <option value="Mum" selected>Mumbai</option>
+                    <option value="Dlh" selected>Delhi</option>
+                    <option value="Pun" selected>Pune</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="tickets">No. of Tickets:</label></th>
+                <td><input type="number" min="0" max="10" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <th><label for="price">Price Range(Rs.2000 - Rs.10000):</label></th>
+                <td><input type="range" min="2000" max="10000" step="100" name="price" id="price"></td>
+            </tr>
+            <tr>
+                <th><label for="payment">Payment Method:</label></th>
+                <td>
+                    <input type="radio" name="payment" id="payment" value="upi">UPI
+                    <input type="radio" name="payment" id="payment" value="dcard">Debit Card
+                </td>
+            </tr>
+            <tr>
+                <th><label for="Session">Sessions:</label></th>
+                <td>
+                    <input type="checkbox" name="session1" id="s1" value="s1">Session 1
+                    <input type="checkbox" name="session2" id="s2" value="s2">Session 2
+                    <input type="checkbox" name="session3" id="s3" value="s3">Session 3
+                    <input type="checkbox" name="session4" id="s4" value="s4">Session 4
+                </td>
+            </tr>
+            <tr>
+                <th><label for="arrival">Date/Time of Arrival:</label></th>
+                <td><input type="datetime" name="datetime" id="datetime" value="YYY:MM:DD"></td>
+            </tr>
+            <tr>
+                <th><label for="remarks">Remarks:</label></th>
+                <td><textarea rows="3" cols="25" name="remarks" id="remarks"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="T&C">Terms and Conditions:</label></th>
+                <td>
+                    <input type="checkbox" name="t&c" id="t&c" value="text">I have read and give my consent to the above details.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" id="submit" name="Submit" value="Submit">
+                    <input type="reset" id="reset" name="reset" value="Reset">
+                </td>
+            </tr>
+
+        </form>
+        </table>
+    </body>
+</html>
